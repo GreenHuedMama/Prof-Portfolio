@@ -136,3 +136,40 @@ p {
     text-align: center;
   }
 }
+
+@media (max-width: 400px) {
+  .dandelion {
+    max-width: 50px;
+  }
+}
+
+.dandelion {
+  max-width: 75px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active {
+  color: var(a--btn-color);
+}
+
+nav li {
+  display: inline;
+  line-height: 42px;
+  list-style: none;
+  margin-left: 15px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
