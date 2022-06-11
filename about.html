@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page describes Latisha, and the kind of person she is."
+    />
+    <title>About page concerning Latisha Alexander</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles/styles.css" />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -19,11 +27,34 @@
       src="https://kit.fontawesome.com/f80af46535.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>Professional Portfolio</title>
   </head>
 
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img
+            src="images/Dandelion.jpg"
+            class="dandelion"
+            alt="Dandelion Logo"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="About Latisha"> About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Latisha's works"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="How to contact Latisha"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -37,15 +68,80 @@
             <a href="" class="launch-btn">View my work</a>
           </div>
         </div>
-        <div class="col-lg-6">
-          <img
-            src="images/Selfie.jpg"
-            alt="Self-portrait"
-            class="img-fluid"
-            width="300"
-          />
+        <div class="row">
+          <div class="col-md-6 mt-3">
+            <img
+              src="images/Selfie.jpg"
+              alt="Self-portrait"
+              class="img-fluid"
+              width="300"
+              id="selfie"
+            />
+          </div>
+          <div class="col-md-6">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/5KLX20bFUy2z7OowJqsvGx?utm_source=generator"
+              width="300"
+              height="380"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h3>Work Inquiry</h3>
+          <p>Want to work together?</p>
+        </div>
+        <div>
+          <a href="/contact.html" class="btn mt-3" title="Contact Latisha">
+            Get in touch</a
+          >
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a
+          href="mailto:Alexander.Tish@gmail.com"
+          class="email-link"
+          title="Email Latisha"
+        >
+          Alexander.Tish@gmail.com
+        </a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://www.instagram.com/lilcajun99/"
+          title="Instagram profile"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://github.com/GreenHuedMama"
+          title="GitHub profile showing all codes"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/latisha-alexander-857994b2/"
+          title="LinkedIn profile and resume"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="text-center mt-5">
+        😃 This project was coded by Latisha Alexander, and it is
+        <a
+          href="https://github.com/GreenHuedMama/Prof-Portfolio"
+          target="_blank"
+          class="source-code"
+          >open-sourced</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

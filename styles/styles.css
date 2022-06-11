@@ -1,12 +1,17 @@
 :root {
   --btn-color: #0d1b4c;
   --primary-color: #fafafa;
-  --secondary-color: #11144c;
+  --secondary-color: #a2a8d3;
   --third-color: #1c1124;
 }
 
 body {
-  background: #c3195d;
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
 }
 
 h1 {
@@ -22,7 +27,8 @@ h2 {
   font-size: 58px;
 }
 
-h4 {
+h3 {
+  color: var(--primary-color);
   font-size: 48px;
 }
 
@@ -45,9 +51,9 @@ p {
 }
 
 .hero {
-  background: var(--secondary-color);
+  background: var(--btn-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 
 .hero p {
@@ -67,7 +73,7 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 
 .content h1 {
@@ -97,7 +103,7 @@ p {
 }
 
 .launch-btn {
-  border: 1px solid var(--btn-color);
+  border: 1px solid var(--primary-color);
   border-radius: 25px;
   color: var(--primary-color);
   font-size: 18px;
@@ -107,8 +113,8 @@ p {
 }
 
 .launch-btn:hover {
-  background: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background: var(--secondary-color);
+  border: 1px solid var(--btn-color);
   color: var(--third-color);
 }
 
@@ -126,12 +132,8 @@ p {
     font-size: 36px;
   }
 
-  h4 {
+  h3 {
     font-size: 26px;
-  }
-
-  .hero {
-    padding: 80px 20px;
   }
 
   .content {
@@ -142,6 +144,15 @@ p {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  #selfie {
+    margin-left: 20px;
+  }
+  
+  iframe {
+    margin-left: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -221,3 +232,12 @@ footer p {
   margin: 0;
   opacity: 0.5;
 }
+
+.source-code {
+  color: var(--secondary-color);
+}
+
+.contact-link {
+  color: var(--secondary-color);
+}
+
